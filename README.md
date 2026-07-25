@@ -1,4 +1,4 @@
-# Quantum Radio Astronomy with Qiskit 2.x done with AI for training purposes - may have scientific gaps and logical gaps 
+# Quantum Radio Astronomy with Qiskit 2.x done with AI for training purposes - may have scientific and logical gaps 
 
 Reproducible implementations and extensions of the quantum-image experiments
 associated with:
