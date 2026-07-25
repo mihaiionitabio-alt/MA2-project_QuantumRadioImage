@@ -60,7 +60,7 @@ pipeline. An independent asymmetric-ring fit measured:
 The diameter differs by 0.84 microarcseconds, or 0.28 published standard
 deviations.
 
-![EHT M87 comparison](research_results/eht_m87_research_comparison.png)
+![EHT M87 comparison](eht_m87_research_comparison.png)
 
 The EHT pipeline, not QPIE or FRQI, reconstructs the image from irregular
 visibilities. QPIE and FRQI subsequently encode the reconstructed FITS image.
@@ -133,7 +133,7 @@ The script independently implements the published parameters:
 
 Outputs:
 
-- `research_results/paper_reproduction.png`
+- `research_results/paper_reproduction.`
 - `research_results/paper_reproduction_metrics.json`
 
 The paper authors' separate GPL-3.0 companion implementation is available at
@@ -146,7 +146,7 @@ Fast exact-overlap mode:
 ```bash
 python main_try.py \
   --no-show \
-  --output research_results/paper_calibration_comparison.png \
+  --output research_results/paper_calibration_comparison. \
   --metrics research_results/paper_calibration_metrics.json
 ```
 
@@ -182,7 +182,7 @@ The checked-in default run produced a mean absolute gain error of
 mean is driven by a few difficult initializations; this result is retained
 rather than filtered.
 
-![Gain-calibration comparison](research_results/paper_calibration_comparison.png)
+![Gain-calibration comparison](paper_calibration_comparison.png)
 
 ## Run the EHT public-data reproduction
 
