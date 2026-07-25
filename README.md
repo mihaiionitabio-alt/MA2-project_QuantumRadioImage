@@ -44,7 +44,7 @@ sampler recovered 93% of sources with 1,024 shots, equal to the classical
 detector in this benchmark. A single SNR-100 source was recovered in every
 32 x 32 trial using 32 shots.
 
-![Paper experiment reproduction](research_results/paper_reproduction.png)
+![Paper experiment reproduction](paper_reproduction.png)
 
 ## Real radio-interferometry extension
 
