@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.mplconfig/
+.venv/
+.env
+*.log
+.DS_Store
+calibration_results.png
+
+# Downloaded third-party repository and research inputs.
+external/
+data/eht_m87/*.uvfits
+data/hubble_xdf_512.jpg
+
+# Keep only compact, reproducible results in Git.
+research_results/*
+!research_results/eht_m87_apr11_reconstruction.fits
+!research_results/eht_m87_metrics.json
+!research_results/eht_m87_research_comparison.png
+!research_results/paper_reproduction.png
+!research_results/paper_reproduction_metrics.json
+!research_results/paper_calibration_comparison.png
+!research_results/paper_calibration_metrics.json

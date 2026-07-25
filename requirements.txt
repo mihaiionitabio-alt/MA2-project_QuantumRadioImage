@@ -1,0 +1,10 @@
+qiskit>=2.1,<3
+qiskit-aer>=0.17,<1
+numpy>=2.0
+scipy>=1.15
+matplotlib>=3.8
+nbformat>=5.10
+pillow>=11
+astropy>=8,<9
+ehtim==1.3.1
+psutil>=7

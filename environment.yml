@@ -1,0 +1,19 @@
+name: quantum-radio
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - numpy=2.5.1
+  - scipy=1.18.0
+  - matplotlib
+  - pillow
+  - astropy=8.0.1
+  - h5py
+  - networkx
+  - psutil
+  - nbformat
+  - pip:
+      - qiskit==2.5.1
+      - qiskit-aer==0.17.2
+      - ehtim==1.3.1
