@@ -1,0 +1,102 @@
+{
+  "provenance": {
+    "article": "First M87 Event Horizon Telescope Results. I. The Shadow of the Supermassive Black Hole",
+    "article_url": "https://arxiv.org/abs/1906.11238",
+    "imaging_article": "First M87 Event Horizon Telescope Results. IV. Imaging the Central Supermassive Black Hole",
+    "imaging_article_url": "https://arxiv.org/abs/1906.11241",
+    "data_portal_url": "https://eventhorizontelescope.org/for-astronomers/data",
+    "pipeline_repository_url": "https://github.com/eventhorizontelescope/2019-D01-02",
+    "observation": "M87, 2017 April 11, public Stokes-I release"
+  },
+  "visibility_data": {
+    "bands": [
+      {
+        "band": "low",
+        "filename": "SR1_M87_2017_101_lo_hops_netcal_StokesI.uvfits",
+        "sha256": "697af2bb3bbf732115108ffefacd3e59e307f38fe685c3c4579146b0bd661298",
+        "size_bytes": 650880,
+        "frequency_ghz": 227.070703125,
+        "mjd": 57854,
+        "visibility_count": 7447,
+        "station_count": 8,
+        "baseline_count": 21,
+        "maximum_uv_distance_glambda": 8.257298308860172
+      },
+      {
+        "band": "high",
+        "filename": "SR1_M87_2017_101_hi_hops_netcal_StokesI.uvfits",
+        "sha256": "618c3019f60e88268980267a9db68f638b379a85842d83c06003d28550d191f5",
+        "size_bytes": 702720,
+        "frequency_ghz": 229.070703125,
+        "mjd": 57854,
+        "visibility_count": 8058,
+        "station_count": 8,
+        "baseline_count": 21,
+        "maximum_uv_distance_glambda": 8.330027418234517
+      }
+    ],
+    "total_visibility_count": 15505
+  },
+  "reconstruction": {
+    "filename": "eht_m87_apr11_reconstruction.fits",
+    "sha256": "9aa3a29fc3f7848d3f4184cad105afdde0fea3b8368a8801179545e1db92cd80",
+    "shape": [
+      64,
+      64
+    ],
+    "pixel_size_uas": 1.999999999999998,
+    "field_of_view_uas": 127.99999999999987,
+    "compact_flux_jy": 0.5957958877317121,
+    "minimum_jy_per_pixel": 2.1038695937557232e-06,
+    "maximum_jy_per_pixel": 0.001579772695637908,
+    "fourier_backend": "direct",
+    "pipeline_change": "Only ttype changed from nfft to direct because pyNFFT is unavailable for Python 3.13 on Windows."
+  },
+  "image_comparison": {
+    "paper_ring_diameter_uas": 42.0,
+    "paper_uncertainty_uas": 3.0,
+    "paper_interval_uas": [
+      39.0,
+      45.0
+    ],
+    "local_ring_diameter_uas": 41.15556083462792,
+    "diameter_difference_uas": -0.84443916537208,
+    "difference_in_paper_sigma": 0.2814797217906933,
+    "within_paper_uncertainty": true,
+    "ring_to_central_mean_brightness_ratio": 8.285708141597684,
+    "central_region_radius_uas": 10.0,
+    "ring_annulus_uas": [
+      16.0,
+      26.0
+    ],
+    "fit": {
+      "center_x_pixels": 32.11594109691459,
+      "center_y_pixels": 34.148717818226764,
+      "radius_pixels": 10.28889020865699,
+      "sigma_pixels": 3.1426727290872645,
+      "bright_side_angle_degrees_image_coordinates": -96.88657477870434,
+      "least_squares_cost": 0.015397244812121829
+    }
+  },
+  "quantum_encoding": {
+    "execution_mode": "exact local statevector (not quantum hardware)",
+    "qpie_qubits": 12,
+    "qpie_mse_jy2_per_pixel2": 1.3042153068545837e-38,
+    "qpie_max_abs_error_jy_per_pixel": 6.505213034913027e-19,
+    "qpie_and_qft_seconds": 8.483752200001618,
+    "qft_roundtrip_mse_jy2_per_pixel2": 4.9144943283821854e-36,
+    "frqi_qubits": 13,
+    "frqi_mse_jy2_per_pixel2": 8.750285175403895e-34,
+    "frqi_max_abs_error_jy_per_pixel": 1.4255666146243545e-15,
+    "frqi_seconds": 1.2655461999966064
+  },
+  "software": {
+    "python": "3.13.14",
+    "qiskit": "2.5.1",
+    "qiskit_aer": "0.17.2",
+    "ehtim": "1.3.1",
+    "astropy": "8.0.1",
+    "numpy": "2.5.1",
+    "scipy": "1.18.0"
+  }
+}

@@ -1,0 +1,427 @@
+{
+  "paper": {
+    "title": "Quantum Radio Astronomy: Data Encodings and Quantum Image Processing",
+    "authors": [
+      "Thomas Brunet",
+      "Emma Tolley",
+      "Stefano Corda",
+      "Roman Ilic",
+      "P. Chris Broekema",
+      "Jean-Paul Kneib"
+    ],
+    "arxiv": "https://arxiv.org/abs/2310.12084",
+    "doi": "https://doi.org/10.1016/j.ascom.2024.100796",
+    "companion_code": "https://github.com/QuantumRadioAstronomy/QCRadioSimulator"
+  },
+  "method": {
+    "sampling": "ideal Born-probability sampling",
+    "gate_noise": false,
+    "source_beam_sigma_pixels": 1.5,
+    "source_match_tolerance_pixels": 1.5,
+    "random_image_distribution": "uniform [0, 1)",
+    "seed": 231012084
+  },
+  "random_image_reconstruction": [
+    {
+      "side": 4,
+      "pixel_count": 16,
+      "encoding": "QPIE",
+      "shot_scaling": "Npix",
+      "shots": 16,
+      "mean_absolute_error_percent": 22.909703903030262,
+      "standard_deviation_percent": 2.803859650446156,
+      "trials": 8
+    },
+    {
+      "side": 4,
+      "pixel_count": 16,
+      "encoding": "FRQI",
+      "shot_scaling": "Npix",
+      "shots": 16,
+      "mean_absolute_error_percent": 34.04056588888434,
+      "standard_deviation_percent": 3.739667329683683,
+      "trials": 8
+    },
+    {
+      "side": 4,
+      "pixel_count": 16,
+      "encoding": "QPIE",
+      "shot_scaling": "Npix_squared",
+      "shots": 256,
+      "mean_absolute_error_percent": 5.341952945499135,
+      "standard_deviation_percent": 0.8733876300816666,
+      "trials": 8
+    },
+    {
+      "side": 4,
+      "pixel_count": 16,
+      "encoding": "FRQI",
+      "shot_scaling": "Npix_squared",
+      "shots": 256,
+      "mean_absolute_error_percent": 7.9061574366866765,
+      "standard_deviation_percent": 0.8116298092128001,
+      "trials": 8
+    },
+    {
+      "side": 8,
+      "pixel_count": 64,
+      "encoding": "QPIE",
+      "shot_scaling": "Npix",
+      "shots": 64,
+      "mean_absolute_error_percent": 25.35780127787767,
+      "standard_deviation_percent": 2.475788151643371,
+      "trials": 8
+    },
+    {
+      "side": 8,
+      "pixel_count": 64,
+      "encoding": "FRQI",
+      "shot_scaling": "Npix",
+      "shots": 64,
+      "mean_absolute_error_percent": 34.68577908131488,
+      "standard_deviation_percent": 2.65634229278742,
+      "trials": 8
+    },
+    {
+      "side": 8,
+      "pixel_count": 64,
+      "encoding": "QPIE",
+      "shot_scaling": "Npix_squared",
+      "shots": 4096,
+      "mean_absolute_error_percent": 2.641881301313001,
+      "standard_deviation_percent": 0.35256426910539124,
+      "trials": 8
+    },
+    {
+      "side": 8,
+      "pixel_count": 64,
+      "encoding": "FRQI",
+      "shot_scaling": "Npix_squared",
+      "shots": 4096,
+      "mean_absolute_error_percent": 3.478201639109595,
+      "standard_deviation_percent": 0.2506944727387403,
+      "trials": 8
+    },
+    {
+      "side": 16,
+      "pixel_count": 256,
+      "encoding": "QPIE",
+      "shot_scaling": "Npix",
+      "shots": 256,
+      "mean_absolute_error_percent": 25.84755042516158,
+      "standard_deviation_percent": 1.0019134187303982,
+      "trials": 8
+    },
+    {
+      "side": 16,
+      "pixel_count": 256,
+      "encoding": "FRQI",
+      "shot_scaling": "Npix",
+      "shots": 256,
+      "mean_absolute_error_percent": 34.83588745015061,
+      "standard_deviation_percent": 1.6052371345041863,
+      "trials": 8
+    },
+    {
+      "side": 16,
+      "pixel_count": 256,
+      "encoding": "QPIE",
+      "shot_scaling": "Npix_squared",
+      "shots": 65536,
+      "mean_absolute_error_percent": 1.4632320812217776,
+      "standard_deviation_percent": 0.08051716368563437,
+      "trials": 8
+    },
+    {
+      "side": 16,
+      "pixel_count": 256,
+      "encoding": "FRQI",
+      "shot_scaling": "Npix_squared",
+      "shots": 65536,
+      "mean_absolute_error_percent": 1.654066269213697,
+      "standard_deviation_percent": 0.07926798555209497,
+      "trials": 8
+    },
+    {
+      "side": 32,
+      "pixel_count": 1024,
+      "encoding": "QPIE",
+      "shot_scaling": "Npix",
+      "shots": 1024,
+      "mean_absolute_error_percent": 25.882861263643083,
+      "standard_deviation_percent": 0.6200850945044921,
+      "trials": 8
+    },
+    {
+      "side": 32,
+      "pixel_count": 1024,
+      "encoding": "FRQI",
+      "shot_scaling": "Npix",
+      "shots": 1024,
+      "mean_absolute_error_percent": 34.3261182568026,
+      "standard_deviation_percent": 0.5850395275671675,
+      "trials": 8
+    },
+    {
+      "side": 32,
+      "pixel_count": 1024,
+      "encoding": "QPIE",
+      "shot_scaling": "Npix_squared",
+      "shots": 1048576,
+      "mean_absolute_error_percent": 0.7318400929979005,
+      "standard_deviation_percent": 0.025967139810506357,
+      "trials": 8
+    },
+    {
+      "side": 32,
+      "pixel_count": 1024,
+      "encoding": "FRQI",
+      "shot_scaling": "Npix_squared",
+      "shots": 1048576,
+      "mean_absolute_error_percent": 0.8060000025134393,
+      "standard_deviation_percent": 0.02535928228463566,
+      "trials": 8
+    }
+  ],
+  "source_identification": [
+    {
+      "scenario": "multiple_sources_snr10",
+      "side": 8,
+      "pixel_count": 64,
+      "source_count": 1,
+      "snr": 10.0,
+      "implementation": "classical_image",
+      "shots": 0,
+      "mean_efficiency": 1.0,
+      "standard_deviation": 0.0,
+      "trials": 20
+    },
+    {
+      "scenario": "multiple_sources_snr10",
+      "side": 8,
+      "pixel_count": 64,
+      "source_count": 1,
+      "snr": 10.0,
+      "implementation": "ideal_qpie_sampling",
+      "shots": 64,
+      "mean_efficiency": 1.0,
+      "standard_deviation": 0.0,
+      "trials": 20
+    },
+    {
+      "scenario": "multiple_sources_snr10",
+      "side": 16,
+      "pixel_count": 256,
+      "source_count": 2,
+      "snr": 10.0,
+      "implementation": "classical_image",
+      "shots": 0,
+      "mean_efficiency": 0.85,
+      "standard_deviation": 0.2856202852887397,
+      "trials": 20
+    },
+    {
+      "scenario": "multiple_sources_snr10",
+      "side": 16,
+      "pixel_count": 256,
+      "source_count": 2,
+      "snr": 10.0,
+      "implementation": "ideal_qpie_sampling",
+      "shots": 256,
+      "mean_efficiency": 0.925,
+      "standard_deviation": 0.18317377426626164,
+      "trials": 20
+    },
+    {
+      "scenario": "multiple_sources_snr10",
+      "side": 32,
+      "pixel_count": 1024,
+      "source_count": 5,
+      "snr": 10.0,
+      "implementation": "classical_image",
+      "shots": 0,
+      "mean_efficiency": 0.93,
+      "standard_deviation": 0.11742858972247996,
+      "trials": 20
+    },
+    {
+      "scenario": "multiple_sources_snr10",
+      "side": 32,
+      "pixel_count": 1024,
+      "source_count": 5,
+      "snr": 10.0,
+      "implementation": "ideal_qpie_sampling",
+      "shots": 1024,
+      "mean_efficiency": 0.93,
+      "standard_deviation": 0.11742858972247995,
+      "trials": 20
+    },
+    {
+      "scenario": "multiple_sources_snr10",
+      "side": 64,
+      "pixel_count": 4096,
+      "source_count": 17,
+      "snr": 10.0,
+      "implementation": "classical_image",
+      "shots": 0,
+      "mean_efficiency": 0.9558823529411764,
+      "standard_deviation": 0.05355679223531331,
+      "trials": 20
+    },
+    {
+      "scenario": "multiple_sources_snr10",
+      "side": 64,
+      "pixel_count": 4096,
+      "source_count": 17,
+      "snr": 10.0,
+      "implementation": "ideal_qpie_sampling",
+      "shots": 4096,
+      "mean_efficiency": 0.9441176470588235,
+      "standard_deviation": 0.048563408675405685,
+      "trials": 20
+    },
+    {
+      "scenario": "single_bright_source_snr100",
+      "side": 8,
+      "pixel_count": 64,
+      "source_count": 1,
+      "snr": 100.0,
+      "implementation": "classical_image",
+      "shots": 0,
+      "mean_efficiency": 1.0,
+      "standard_deviation": 0.0,
+      "trials": 20
+    },
+    {
+      "scenario": "single_bright_source_snr100",
+      "side": 8,
+      "pixel_count": 64,
+      "source_count": 1,
+      "snr": 100.0,
+      "implementation": "ideal_qpie_sampling",
+      "shots": 8,
+      "mean_efficiency": 0.95,
+      "standard_deviation": 0.22360679774997902,
+      "trials": 20
+    },
+    {
+      "scenario": "single_bright_source_snr100",
+      "side": 16,
+      "pixel_count": 256,
+      "source_count": 1,
+      "snr": 100.0,
+      "implementation": "classical_image",
+      "shots": 0,
+      "mean_efficiency": 1.0,
+      "standard_deviation": 0.0,
+      "trials": 20
+    },
+    {
+      "scenario": "single_bright_source_snr100",
+      "side": 16,
+      "pixel_count": 256,
+      "source_count": 1,
+      "snr": 100.0,
+      "implementation": "ideal_qpie_sampling",
+      "shots": 16,
+      "mean_efficiency": 1.0,
+      "standard_deviation": 0.0,
+      "trials": 20
+    },
+    {
+      "scenario": "single_bright_source_snr100",
+      "side": 32,
+      "pixel_count": 1024,
+      "source_count": 1,
+      "snr": 100.0,
+      "implementation": "classical_image",
+      "shots": 0,
+      "mean_efficiency": 1.0,
+      "standard_deviation": 0.0,
+      "trials": 20
+    },
+    {
+      "scenario": "single_bright_source_snr100",
+      "side": 32,
+      "pixel_count": 1024,
+      "source_count": 1,
+      "snr": 100.0,
+      "implementation": "ideal_qpie_sampling",
+      "shots": 32,
+      "mean_efficiency": 1.0,
+      "standard_deviation": 0.0,
+      "trials": 20
+    },
+    {
+      "scenario": "single_bright_source_snr100",
+      "side": 64,
+      "pixel_count": 4096,
+      "source_count": 1,
+      "snr": 100.0,
+      "implementation": "classical_image",
+      "shots": 0,
+      "mean_efficiency": 1.0,
+      "standard_deviation": 0.0,
+      "trials": 20
+    },
+    {
+      "scenario": "single_bright_source_snr100",
+      "side": 64,
+      "pixel_count": 4096,
+      "source_count": 1,
+      "snr": 100.0,
+      "implementation": "ideal_qpie_sampling",
+      "shots": 64,
+      "mean_efficiency": 1.0,
+      "standard_deviation": 0.0,
+      "trials": 20
+    }
+  ],
+  "example": {
+    "truth": [
+      [
+        16.0,
+        11.0
+      ],
+      [
+        12.0,
+        23.0
+      ],
+      [
+        10.0,
+        15.0
+      ],
+      [
+        11.0,
+        20.0
+      ],
+      [
+        13.0,
+        6.0
+      ]
+    ],
+    "detections": [
+      [
+        11.525301563496788,
+        21.33434904878953
+      ],
+      [
+        13.150674400652555,
+        6.026263503803962
+      ],
+      [
+        15.863280331623121,
+        11.33173887178683
+      ],
+      [
+        9.99960176345561,
+        15.364367743967543
+      ],
+      [
+        12.83628033686515,
+        23.8350683263894
+      ]
+    ]
+  },
+  "elapsed_seconds": 14.00570229999721
+}
